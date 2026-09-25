@@ -1,37 +1,39 @@
-# SamuelFleig.com
+# samuelfleig.com
 
-Persönliche Portfolio-Seite von Samuel Fleig — AI Engineer und CS-Student der TH Mannheim.
+Persönliche Dachseite von Samuel Fleig — ein Einstieg mit drei Türen: Arbeit, Lernen und Leben.
 
-## Inhalt
+Live unter [https://samuelfleig.com](https://samuelfleig.com).
 
-- **Über mich**: Kurzbio und Forschungsfokus (agentische Systeme, Harness-Engineering)
-- **Projekte**: Übersicht der Hauptprojekte (HAI, Hermes, Agent-Baukasten)
-- **Kontakt**: E-Mail und GitHub-Links
+## Aufbau
 
-## Tech-Stack
+- `index.html` — die gesamte Seite als semantisches HTML, ohne Template-Engine
+- `style.css` — Styling inkl. Dark-/Light-Theme und selbst gehosteter Schriften
+- `script.js` — Vanilla-JS: das Tür-System (Auf-/Zuklappen der drei Bereiche) mit ARIA-Support
+- `fonts/` — selbst gehostete Webfonts (keine externen Requests, offline-fähig):
+  - Instrument Serif
+  - Newsreader
+  - IBM Plex Mono
+  - alle lizenziert unter SIL Open Font License
+- `.gitignore` — private und lokale Dateien vom Repo fernhalten
 
-- **HTML5** — semantisches Markup
-- **CSS3** — responsive Design, Dark-Mode-Support
-- **Keine Dependencies** — reines statisches Markup, sofort deploybar
-
-## Entwicklung lokal
-
-Seite im Browser öffnen:
+## Lokal ansehen
 
 ```bash
-# Option 1: Direkt öffnen
-open index.html
-
-# Option 2: Mit lokalem HTTP-Server (für relative Pfade)
-python3 -m http.server 8000
-# Dann http://localhost:8000 im Browser
+python3 -m http.server
 ```
+
+Dann im Browser die angezeigte lokale Adresse öffnen.
 
 ## Deployment
 
-Später: GitHub Pages oder ähnlich.
-Aktuell: Nur lokale Vorschau, kein Remote-Deploy konfiguriert.
+Die Seite ist ein Cloudflare Worker mit Static Assets. Deploy aus einem Ordner, der nur die Seitendateien enthält (`index.html`, `style.css`, `script.js`, `fonts/`):
+
+```bash
+npx wrangler deploy --assets . --name samuelfleig-com --compatibility-date 2026-09-25 \
+  --domain samuelfleig.com --domain www.samuelfleig.com
+```
 
 ## Lizenz
 
-© 2026 Samuel Fleig. Alle Rechte vorbehalten.
+- **Code** (`index.html`, `style.css`, `script.js`): alle Rechte vorbehalten.
+- **Fonts** (`fonts/`): SIL Open Font License (OFL).
