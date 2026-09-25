@@ -2,3 +2,13 @@
 PRIVATE_PROFILE.md
 POSITIONING.md
 landing/
+
+# secrets / local tooling
+.env
+.env.*
+.dev.vars
+*.pem
+*.key
+.wrangler/
+node_modules/
+*.log

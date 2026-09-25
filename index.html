@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta
       name="description"
-      content="Samuel Fleig entwickelt Systeme für menschliche Handlungsfähigkeit, Lernen und ein Leben in Bewegung."
+      content="Samuel Fleig baut und untersucht Systeme, die Menschen mehr verstehen, kontrollieren und handeln lassen."
     >
     <meta name="theme-color" content="#eee8da" media="(prefers-color-scheme: light)">
     <meta name="theme-color" content="#11130f" media="(prefers-color-scheme: dark)">
@@ -20,29 +20,48 @@
     <header class="site-header" aria-label="Seitenkopf">
       <a class="wordmark" href="#hauptinhalt" aria-label="Samuel Fleig – zum Seitenanfang">
         <span class="wordmark__name">Samuel Fleig</span>
-        <span class="wordmark__role">AI Engineering · Lernen · Leben</span>
+        <span class="wordmark__role">Bauen · Lernen · Leben</span>
       </a>
-      <p class="header-thesis">Systeme für menschliche Handlungsfähigkeit.</p>
+      <nav class="header-contact" aria-label="Kontakt">
+        <a href="mailto:hallo@samuelfleig.com">hallo@samuelfleig.com</a>
+        <a href="https://github.com/smlfg">GitHub</a>
+        <a href="https://linktr.ee/smlflg">Linktree</a>
+      </nav>
     </header>
 
     <main id="hauptinhalt">
       <section class="hero" aria-labelledby="seitentitel">
         <div class="hero__index" aria-hidden="true">
-          <span>Samuel Fleig</span>
-          <span>Kapitel 01</span>
+          <span>Samuel Fleig — persönliche Dachseite</span>
+          <span>Stand: September 2026</span>
         </div>
 
         <div class="hero__content">
           <p class="eyebrow">Drei Türen. Ein Mensch.</p>
           <h1 id="seitentitel">Wähle deine<br>Tür.</h1>
           <p class="hero__lead">
-            Ich baue Systeme, mit denen Menschen mehr können, mehr verstehen und
-            mehr von ihrem Leben erreichen.
+            Ich baue und untersuche Systeme, die Menschen mehr verstehen,
+            kontrollieren und handeln lassen — und dokumentiere ehrlich,
+            was wirklich funktioniert.
           </p>
           <blockquote class="manifesto">
             <p>„Andere machen Agenten fähiger — ich mache Menschen agentenfähig.“</p>
             <cite>Samuel Fleig</cite>
           </blockquote>
+          <p class="hero__stance">
+            Ich will verstehen, wie Systeme wirken, und nicht blind darauf
+            vertrauen. Ich will sie so bauen, dass Menschen mehr verstehen,
+            selbst entscheiden und tatsächlich handeln können.
+          </p>
+          <p class="hero__now">
+            Stand: September 2026 — woran ich gerade baue, steht hinter den
+            drei Türen unten.
+          </p>
+          <ul class="hero__doors" aria-label="Direkt zu den drei Türen">
+            <li><a href="#arbeit-inhalt">Arbeit</a></li>
+            <li><a href="#lernen-inhalt">Lernen</a></li>
+            <li><a href="#leben-inhalt">Leben</a></li>
+          </ul>
         </div>
 
         <a class="hero__cue" href="#tueren">
@@ -53,7 +72,7 @@
 
       <section class="door-selector" id="tueren" aria-labelledby="tueren-titel">
         <header class="door-intro">
-          <p class="section-index" aria-hidden="true">02 / Der Eingang</p>
+          <p class="section-index" aria-hidden="true">Der Eingang — drei Wege</p>
           <div>
             <p class="eyebrow">Arbeit · Lernen · Leben</p>
             <h2 id="tueren-titel">Womit willst du<br>Samuel kennenlernen?</h2>
@@ -87,27 +106,54 @@
             <div class="door-reveal" id="arbeit-inhalt">
               <div class="door-reveal__clip">
                 <article class="door-panel door-panel--work">
-                  <p class="door-panel__route">01 / Arbeit · HAI</p>
-                  <h3>Agenten sollen Arbeit erweitern — nicht den Menschen ersetzen.</h3>
+                  <p class="door-panel__route">01 / Arbeit · Bauen</p>
+                  <h3>Nicht maximale Autonomie — sondern Scope, Gates, Belege, Übergaben.</h3>
                   <p class="door-panel__statement">
                     Im Human-Agent Interface geht es um Systeme, Rollen,
-                    Schnittstellen, Kontrollschleifen und Fehlerfälle. Der Mensch
-                    bleibt im Zentrum und behält die Kontrolle.
+                    Schnittstellen, Kontrollschleifen und Fehlerfälle. Die
+                    Entscheidung bleibt beim Menschen.
                   </p>
                   <p>
                     Andere machen Agenten fähiger. Mich interessiert, was passiert,
                     wenn Menschen durch diese Systeme selbst handlungsfähiger werden.
                   </p>
+                  <ul class="work-list">
+                    <li>
+                      <a href="https://www.human-agent-interface.com/samuel/">HAI — Human-Agent Interface</a>
+                      <span>Agenten erweitern menschliche Arbeit, ohne dass der Mensch die Kontrolle verliert.</span>
+                    </li>
+                    <li>
+                      <a href="https://github.com/smlfg/hai-mcp">HAI-MCP</a>
+                      <span>Lokale Steuerschicht für Agenten-Missionen mit Belegen und sauberem Abschluss.</span>
+                    </li>
+                    <li>
+                      <a href="https://github.com/smlfg/sidecar-v5">Sidecar</a>
+                      <span>Begleiter, der Agentenarbeit beobachtbar und prüfbar macht.</span>
+                    </li>
+                    <li>
+                      <a href="https://github.com/smlfg/SelfAi-NPU-AGENT">SelfAI</a>
+                      <span>Lokale KI auf eigener Hardware.</span>
+                    </li>
+                    <li>
+                      <a href="https://github.com/smlfg/archify-free-pipeline-research">Archify-Pipeline</a>
+                      <span>Mehrere freie Modelle kartieren ein Repo, Belege werden gegen den Code geprüft.</span>
+                    </li>
+                  </ul>
+                  <p class="door-panel__questions">
+                    Fragen, die ich an jedes System stelle: Was ist der eigentliche
+                    Mechanismus? Welche Annahme steckt dahinter? Wie würde es
+                    scheitern? Was würde ich tatsächlich beobachten?
+                  </p>
                   <div class="door-panel__actions">
                     <a
                       class="action action--primary"
-                      href="https://humanagentinterface.com"
+                      href="https://www.human-agent-interface.com/samuel/"
                     >
                       Human Agent Interface ansehen <span aria-hidden="true">↗</span>
                     </a>
                     <a
                       class="action action--secondary"
-                      href="mailto:smlflg@gmail.com?subject=Projektidee%20mit%20Samuel%20besprechen"
+                      href="mailto:hallo@samuelfleig.com?subject=Projektidee%20mit%20Samuel%20besprechen"
                     >
                       Projekt mit Samuel besprechen <span aria-hidden="true">→</span>
                     </a>
@@ -127,7 +173,7 @@
                 aria-controls="lernen-inhalt"
               >
                 <span class="door-tab__number">02</span>
-                <span class="door-tab__route">Lernen / Studium</span>
+                <span class="door-tab__route">Lernen / Schreiben</span>
                 <span class="door-tab__title">Ich will mit dir<br>lernen</span>
                 <span class="door-tab__action">
                   <span class="door-tab__action-text">Tür öffnen</span>
@@ -139,23 +185,35 @@
             <div class="door-reveal" id="lernen-inhalt">
               <div class="door-reveal__clip">
                 <article class="door-panel door-panel--learn">
-                  <p class="door-panel__route">02 / Lernen · Studium</p>
+                  <p class="door-panel__route">02 / Lernen · Schreiben</p>
                   <h3>Ein erzeugtes Artefakt ist noch keine eigene Kompetenz.</h3>
                   <p class="door-panel__statement">
-                    Als Student für Informatik und KI lerne ich in kurzen,
-                    aktiven Schleifen: direktes Feedback, Erklären in eigenen
-                    Worten und Anwenden auf echte Aufgaben.
+                    Ich lerne in kurzen, aktiven Schleifen: mit direktem Feedback,
+                    Erklären in eigenen Worten und Anwenden auf echte Aufgaben.
                   </p>
-                  <p>
-                    Lernen endet für mich nicht dort, wo eine Antwort erzeugt wurde.
-                    Erst wenn ich den Stoff selbst durchdacht, erklärt und benutzt
-                    habe, ist er wirklich angekommen.
-                  </p>
+                  <ol class="learn-loop">
+                    <li>kleine echte Aufgabe</li>
+                    <li>genau eine Lücke üben</li>
+                    <li>sofortiges Feedback</li>
+                    <li>in eigenen Worten erklären</li>
+                    <li>auf echte Aufgabe übertragen</li>
+                    <li>ohne Agent lösen</li>
+                  </ol>
+                  <ul class="learn-list">
+                    <li>
+                      <a href="https://medium.com/@smlflg">Texte auf Medium</a>
+                      <span>Über lokale KI, Transformer und Agentenführung.</span>
+                    </li>
+                    <li>
+                      <a href="https://huggingface.co/smlflg">Modelle auf Hugging Face</a>
+                      <span>Veröffentlichte Modelle zum Ausprobieren.</span>
+                    </li>
+                  </ul>
                   <p class="inline-placeholder"><span>[Notizen folgen]</span></p>
                   <div class="door-panel__actions">
                     <a
                       class="action action--primary"
-                      href="mailto:smlflg@gmail.com?subject=Lernschleife%20mit%20Samuel"
+                      href="mailto:hallo@samuelfleig.com?subject=Lernschleife%20mit%20Samuel"
                     >
                       Lernschleife mit Samuel starten <span aria-hidden="true">→</span>
                     </a>
@@ -190,19 +248,29 @@
                   <p class="door-panel__route">03 / Leben · Begegnung</p>
                   <h3>Ambition und Lebensfreude gehören zusammen.</h3>
                   <p class="door-panel__statement">
-                    Musik, Tanz, Festivals, Reisen, lange Gespräche,
-                    Freundschaften und gemeinsame Projekte gehören zu meinem
-                    Leben genauso dazugehören wie die Arbeit an Systemen.
+                    Musik, Tanz, Festival- und Rave-Kultur, Reisen, lange
+                    Gespräche, Freundschaften und gemeinsame Projekte — dazu
+                    Schach, Film, Playlists sowie Karten und Orte entdecken.
                   </p>
                   <p>
-                    Ich will nicht nur an Ergebnissen hängen. Ich will Menschen
-                    treffen, Ideen gemeinsam weiterdenken und mit Neugier offen
-                    für das bleiben, was Begegnung möglich macht.
+                    Lebensfreude ist für mich Energiequelle, kein Party-Fotoalbum:
+                    Menschen treffen, Ideen gemeinsam weiterdenken, neugierig
+                    bleiben für das, was Begegnung möglich macht.
+                  </p>
+                  <p class="life-links">
+                    <a href="https://open.spotify.com/user/smlflg">Meine Musik auf Spotify</a>
+                    <a href="https://www.chess.com/member/samuelflg">Schach auf chess.com</a>
+                  </p>
+                  <p class="life-links life-links--more">
+                    <a href="https://www.instagram.com/samuel_fleig/">Instagram</a>
+                    <a href="https://twitter.com/Samuelflg1">X</a>
+                    <a href="https://de.quora.com/profile/Samuel-Fleig">Quora</a>
+                    <a href="https://genius.com/SamuelFlg">Genius</a>
                   </p>
                   <div class="door-panel__actions">
                     <a
                       class="action action--primary"
-                      href="mailto:smlflg@gmail.com?subject=Kontakt%20zu%20Samuel"
+                      href="mailto:hallo@samuelfleig.com?subject=Kontakt%20zu%20Samuel"
                     >
                       Samuel schreiben <span aria-hidden="true">→</span>
                     </a>
@@ -224,6 +292,7 @@
         <p>
           Arbeit, Lernen und Leben gehören für mich nicht in getrennte Welten.
           Entscheidend ist, dass ein System zum Menschen passt — nicht umgekehrt.
+          Was ich baue, prüfe ich an Belegen und an der Übergabe an den Menschen.
         </p>
       </section>
     </main>
@@ -231,8 +300,9 @@
     <footer class="site-footer">
       <div>
         <p class="footer-label">Kontakt</p>
-        <a href="mailto:smlflg@gmail.com">smlflg@gmail.com</a>
+        <a href="mailto:hallo@samuelfleig.com">hallo@samuelfleig.com</a>
         <a href="https://github.com/smlfg">github.com/smlfg</a>
+        <a href="https://linktr.ee/smlflg">linktr.ee/smlflg</a>
       </div>
       <p class="footer-note">Samuel Fleig — persönliche Dachseite</p>
       <p><span class="placeholder">[Impressum folgt]</span></p>

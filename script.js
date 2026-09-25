@@ -16,8 +16,8 @@
   }));
 
   const labels = {
-    arbeit: "Arbeit / HAI",
-    lernen: "Lernen / Studium",
+    arbeit: "Arbeit / Bauen",
+    lernen: "Lernen / Schreiben",
     leben: "Leben / Begegnung",
   };
 
