@@ -1,77 +1,241 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="de">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Samuel Fleig — AI Engineer</title>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta
+      name="description"
+      content="Samuel Fleig entwickelt Systeme für menschliche Handlungsfähigkeit, Lernen und ein Leben in Bewegung."
+    >
+    <meta name="theme-color" content="#eee8da" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#11130f" media="(prefers-color-scheme: dark)">
+    <link rel="icon" href="data:,">
+    <title>Samuel Fleig — Wähle deine Tür</title>
     <link rel="stylesheet" href="style.css">
-</head>
-<body>
-    <header>
-        <div class="container">
-            <h1>Samuel Fleig</h1>
-            <p class="tagline">AI Engineer & CS-Student</p>
-        </div>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#hauptinhalt">Zum Inhalt springen</a>
+
+    <header class="site-header" aria-label="Seitenkopf">
+      <a class="wordmark" href="#hauptinhalt" aria-label="Samuel Fleig – zum Seitenanfang">
+        <span class="wordmark__name">Samuel Fleig</span>
+        <span class="wordmark__role">AI Engineering · Lernen · Leben</span>
+      </a>
+      <p class="header-thesis">Systeme für menschliche Handlungsfähigkeit.</p>
     </header>
 
-    <nav>
-        <div class="container">
-            <a href="#about">Über mich</a>
-            <a href="#projects">Projekte</a>
-            <a href="#contact">Kontakt</a>
+    <main id="hauptinhalt">
+      <section class="hero" aria-labelledby="seitentitel">
+        <div class="hero__index" aria-hidden="true">
+          <span>Samuel Fleig</span>
+          <span>Kapitel 01</span>
         </div>
-    </nav>
 
-    <main>
-        <section id="about" class="section">
-            <div class="container">
-                <h2>Über mich</h2>
-                <p>
-                    Ich bin ein fortgeschrittener AI Engineer und CS-Student der TH Mannheim mit Fokus auf agentische Systeme, Prompt Engineering und Harness-Engineering. Meine aktuelle Forschungslinie: wie machen wir Menschen agentenfähiger, statt nur Agenten fähiger zu machen.
-                </p>
-                <p>
-                    Besonderheit: persönlicher Eigenbau einer Harness-Infrastruktur (Hermes) mit strukturierter Multi-Session-Orchestrierung und Confidence-Scoring — Schnittstelle zwischen akademischer KI-Forschung und praktischem Engineering.
-                </p>
-            </div>
-        </section>
+        <div class="hero__content">
+          <p class="eyebrow">Drei Türen. Ein Mensch.</p>
+          <h1 id="seitentitel">Wähle deine<br>Tür.</h1>
+          <p class="hero__lead">
+            Ich baue Systeme, mit denen Menschen mehr können, mehr verstehen und
+            mehr von ihrem Leben erreichen.
+          </p>
+          <blockquote class="manifesto">
+            <p>„Andere machen Agenten fähiger — ich mache Menschen agentenfähig.“</p>
+            <cite>Samuel Fleig</cite>
+          </blockquote>
+        </div>
 
-        <section id="projects" class="section">
-            <div class="container">
-                <h2>Projekte</h2>
-                <div class="projects-grid">
-                    <div class="project-card">
-                        <h3>HAI — Agentische Sanduhr</h3>
-                        <p>Orchestrierungs-Framework für autonome KI-Agenten mit Intent-Recognition und Executor-Pools. Forschungsfrage: wie werden Menschen produktiver als sie handeln können?</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Hermes Optimization</h3>
-                        <p>Eigenbau-Harness mit TextGrad-Signals, DSPy-ähnliche Modulkomposition und OPRO-artige Prompt-Optimierung über 3.300+ Sessions und 159+ Tage.</p>
-                    </div>
-                    <div class="project-card">
-                        <h3>Agent-Baukasten</h3>
-                        <p>Intent-vs-Reach Kohärenz-Schicht für AI-Agenten. Validierte unbesetzte Lücke zwischen Tool-Choice und Agentur.</p>
-                    </div>
-                </div>
-            </div>
-        </section>
+        <a class="hero__cue" href="#tueren">
+          <span>Womit möchtest du anfangen?</span>
+          <span aria-hidden="true">↓</span>
+        </a>
+      </section>
 
-        <section id="contact" class="section">
-            <div class="container">
-                <h2>Kontakt</h2>
-                <p>
-                    <strong>Email:</strong> <a href="mailto:smlflg@gmail.com">smlflg@gmail.com</a>
-                </p>
-                <p>
-                    <strong>GitHub:</strong> <a href="https://github.com/smlfg" target="_blank">@smlfg</a>
-                </p>
+      <section class="door-selector" id="tueren" aria-labelledby="tueren-titel">
+        <header class="door-intro">
+          <p class="section-index" aria-hidden="true">02 / Der Eingang</p>
+          <div>
+            <p class="eyebrow">Arbeit · Lernen · Leben</p>
+            <h2 id="tueren-titel">Womit willst du<br>Samuel kennenlernen?</h2>
+          </div>
+          <p class="door-intro__hint">
+            Wähle eine Tür. Dahinter liegt nicht nur ein Thema, sondern ein
+            eigener Blick darauf, wie ich denke und arbeite.
+          </p>
+        </header>
+
+        <div class="doorway-grid" data-door-system>
+          <section class="doorway" data-doorway="arbeit" aria-labelledby="arbeit-tuer">
+            <div class="doorway__frame">
+              <button
+                class="door-tab door-tab--work"
+                id="arbeit-tuer"
+                type="button"
+                aria-expanded="false"
+                aria-controls="arbeit-inhalt"
+              >
+                <span class="door-tab__number">01</span>
+                <span class="door-tab__route">Arbeit / HAI</span>
+                <span class="door-tab__title">Ich will mit dir<br>arbeiten</span>
+                <span class="door-tab__action">
+                  <span class="door-tab__action-text">Tür öffnen</span>
+                  <span class="door-tab__action-mark" aria-hidden="true"></span>
+                </span>
+              </button>
             </div>
-        </section>
+
+            <div class="door-reveal" id="arbeit-inhalt">
+              <div class="door-reveal__clip">
+                <article class="door-panel door-panel--work">
+                  <p class="door-panel__route">01 / Arbeit · HAI</p>
+                  <h3>Agenten sollen Arbeit erweitern — nicht den Menschen ersetzen.</h3>
+                  <p class="door-panel__statement">
+                    Im Human-Agent Interface geht es um Systeme, Rollen,
+                    Schnittstellen, Kontrollschleifen und Fehlerfälle. Der Mensch
+                    bleibt im Zentrum und behält die Kontrolle.
+                  </p>
+                  <p>
+                    Andere machen Agenten fähiger. Mich interessiert, was passiert,
+                    wenn Menschen durch diese Systeme selbst handlungsfähiger werden.
+                  </p>
+                  <div class="door-panel__actions">
+                    <a
+                      class="action action--primary"
+                      href="https://humanagentinterface.com"
+                    >
+                      Human Agent Interface ansehen <span aria-hidden="true">↗</span>
+                    </a>
+                    <a
+                      class="action action--secondary"
+                      href="mailto:smlflg@gmail.com?subject=Projektidee%20mit%20Samuel%20besprechen"
+                    >
+                      Projekt mit Samuel besprechen <span aria-hidden="true">→</span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="doorway" data-doorway="lernen" aria-labelledby="lernen-tuer">
+            <div class="doorway__frame">
+              <button
+                class="door-tab door-tab--learn"
+                id="lernen-tuer"
+                type="button"
+                aria-expanded="false"
+                aria-controls="lernen-inhalt"
+              >
+                <span class="door-tab__number">02</span>
+                <span class="door-tab__route">Lernen / Studium</span>
+                <span class="door-tab__title">Ich will mit dir<br>lernen</span>
+                <span class="door-tab__action">
+                  <span class="door-tab__action-text">Tür öffnen</span>
+                  <span class="door-tab__action-mark" aria-hidden="true"></span>
+                </span>
+              </button>
+            </div>
+
+            <div class="door-reveal" id="lernen-inhalt">
+              <div class="door-reveal__clip">
+                <article class="door-panel door-panel--learn">
+                  <p class="door-panel__route">02 / Lernen · Studium</p>
+                  <h3>Ein erzeugtes Artefakt ist noch keine eigene Kompetenz.</h3>
+                  <p class="door-panel__statement">
+                    Als Student für Informatik und KI lerne ich in kurzen,
+                    aktiven Schleifen: direktes Feedback, Erklären in eigenen
+                    Worten und Anwenden auf echte Aufgaben.
+                  </p>
+                  <p>
+                    Lernen endet für mich nicht dort, wo eine Antwort erzeugt wurde.
+                    Erst wenn ich den Stoff selbst durchdacht, erklärt und benutzt
+                    habe, ist er wirklich angekommen.
+                  </p>
+                  <p class="inline-placeholder"><span>[Notizen folgen]</span></p>
+                  <div class="door-panel__actions">
+                    <a
+                      class="action action--primary"
+                      href="mailto:smlflg@gmail.com?subject=Lernschleife%20mit%20Samuel"
+                    >
+                      Lernschleife mit Samuel starten <span aria-hidden="true">→</span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+
+          <section class="doorway" data-doorway="leben" aria-labelledby="leben-tuer">
+            <div class="doorway__frame">
+              <button
+                class="door-tab door-tab--life"
+                id="leben-tuer"
+                type="button"
+                aria-expanded="false"
+                aria-controls="leben-inhalt"
+              >
+                <span class="door-tab__number">03</span>
+                <span class="door-tab__route">Leben / Begegnung</span>
+                <span class="door-tab__title">Ich will dich<br>kennenlernen</span>
+                <span class="door-tab__action">
+                  <span class="door-tab__action-text">Tür öffnen</span>
+                  <span class="door-tab__action-mark" aria-hidden="true"></span>
+                </span>
+              </button>
+            </div>
+
+            <div class="door-reveal" id="leben-inhalt">
+              <div class="door-reveal__clip">
+                <article class="door-panel door-panel--life">
+                  <p class="door-panel__route">03 / Leben · Begegnung</p>
+                  <h3>Ambition und Lebensfreude gehören zusammen.</h3>
+                  <p class="door-panel__statement">
+                    Musik, Tanz, Festivals, Reisen, lange Gespräche,
+                    Freundschaften und gemeinsame Projekte gehören zu meinem
+                    Leben genauso dazugehören wie die Arbeit an Systemen.
+                  </p>
+                  <p>
+                    Ich will nicht nur an Ergebnissen hängen. Ich will Menschen
+                    treffen, Ideen gemeinsam weiterdenken und mit Neugier offen
+                    für das bleiben, was Begegnung möglich macht.
+                  </p>
+                  <div class="door-panel__actions">
+                    <a
+                      class="action action--primary"
+                      href="mailto:smlflg@gmail.com?subject=Kontakt%20zu%20Samuel"
+                    >
+                      Samuel schreiben <span aria-hidden="true">→</span>
+                    </a>
+                  </div>
+                </article>
+              </div>
+            </div>
+          </section>
+        </div>
+
+        <p class="door-status" aria-live="polite">
+          Wähle eine Tür. Ohne JavaScript sind alle drei Wege offen.
+        </p>
+      </section>
+
+      <section class="closing" aria-labelledby="abschluss-titel">
+        <p class="eyebrow">Egal, welche Tür</p>
+        <h2 id="abschluss-titel">Ein Mensch.<br>Mehrere Richtungen.</h2>
+        <p>
+          Arbeit, Lernen und Leben gehören für mich nicht in getrennte Welten.
+          Entscheidend ist, dass ein System zum Menschen passt — nicht umgekehrt.
+        </p>
+      </section>
     </main>
 
-    <footer>
-        <div class="container">
-            <p>&copy; 2026 Samuel Fleig. Alle Rechte vorbehalten.</p>
-        </div>
+    <footer class="site-footer">
+      <div>
+        <p class="footer-label">Kontakt</p>
+        <a href="mailto:smlflg@gmail.com">smlflg@gmail.com</a>
+        <a href="https://github.com/smlfg">github.com/smlfg</a>
+      </div>
+      <p class="footer-note">Samuel Fleig — persönliche Dachseite</p>
+      <p><span class="placeholder">[Impressum folgt]</span></p>
     </footer>
-</body>
+  </body>
 </html>
