@@ -12,3 +12,6 @@ landing/
 .wrangler/
 node_modules/
 *.log
+
+# local agent / project-management artifacts (HAI workflow, never published)
+Projek-Managment/
